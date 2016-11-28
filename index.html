@@ -1,9 +1,10 @@
 <!doctype html>
-<html lang="en" ng-app>
+<html lang="en" ng-app="myApp">
 <head>
   <meta charset="UTF-8">
   <title>Angular Demo</title>
   <script src="lib/angular/angular.min.js"></script>
+  <script type="js/controllers.js"></script>
 </head>
 <body>
 
@@ -12,15 +13,6 @@
   <p>{{ 'Atelier '+myObject.workshop + ', Présenté par ' + myObject.author  }}</p>
 </div>
 
-<script>
 
-function MyController($scope) {
-  $scope.myObject = {
-    'club' : 'CLL FST',
-    'workshop' : 'Getting started with Angular',
-    'author' : 'Mohamed Wassim Dimassi'
-  }
-}
-</script>
 </body>
 </html>
