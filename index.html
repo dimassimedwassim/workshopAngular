@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en" ng-app>
+<head>
+  <meta charset="UTF-8">
+  <title>Angular Demo</title>
+  <script src="lib/angular/angular.min.js"></script>
+</head>
+<body>
+
+<div ng-controller = "MyController">
+  <h1>{{myObject.club}}</h1>
+  <p>{{ 'Atelier '+myObject.workshop + ', Présenté par ' + myObject.author  }}</p>
+</div>
+
+<script>
+
+function MyController($scope) {
+  $scope.myObject = {
+    'club' : 'CLL FST',
+    'workshop' : 'Getting started with Angular',
+    'author' : 'Mohamed Wassim Dimassi'
+  }
+}
+</script>
+</body>
+</html>
